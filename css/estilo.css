@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+html {
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", "Times Now", "Times";
+}
+
+/*MAIN-SECTION*/
+.main-section {
+  margin: 1em 0 3.5em;
+}
+
+/*LINKS*/
+.discover-more-link,
+.products-link-category,
+.discover-link {
+  font-family: "Poppins", sans-serif;
+  color: #858585;
+  text-align: center;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+}
+
+.products-link,
+.projects-link,
+.designers-link {
+  font-family: "Times New Roman", "Times Now", "Times";
+  color: #858585;
+  text-align: center;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+}
+
+.discover-more-link {
+  font-size: 0.9em;
+}
+
+.products-link-category {
+  display: block;
+  font-size: 0.8em;
+}
+
+.products-link {
+  display: block;
+}
+
+.projects-link {
+  display: block;
+  color: inherit;
+  margin: 1em;
+  font-size: 1.1em;
+}
+
+/*SECTION-TITLE*/
+.section-title {
+  box-sizing: border-box;
+  padding: 1em;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #858585;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+}
+
+/*HEADER*/
+header {
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+}
+
+.header-logo {
+  display: inline-block;
+  height: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-logo img {
+  height: 100%;
+}
+
+.header-nav-button {
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+}
+
+/*CAROUSEL*/
+.carousel-caption {
+  position: initial;
+  color: inherit;
+  padding: 1em;
+}
+
+#carouselExampleCaptions,
+#carouselExampleCaptions2,
+#carouselExampleCaptions3,
+#carouselExampleCaptions4 {
+  display: flex;
+  align-items: center;
+  margin-top: 1.3em;
+}
+
+#carouselExampleCaptions2 {
+  margin-bottom: 4em;
+}
+
+#carouselExampleCaptions3 {
+  margin-top: 0;
+}
+
+#carouselExampleCaptions4 {
+  background: color-mix(in srgb, #858585, white 80%);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  background: black;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  margin: 1em;
+}
+
+.carousel-caption h5 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  line-height: 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/*MAIN-ARTICLE*/
+.main-article {
+  background: color-mix(in srgb, #858585, white 80%);
+  font-family: "Times New Roman", "Times Now", "Times";
+  padding: 4em 2em;
+}
+.main-article p {
+  text-align: center;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+}
+
+/*PRODUCTS-CAROUSEL*/
+/*DESIGNERS-SECTION*/
+#carouselExampleCaptions4 {
+  padding: 2em 0;
+}
+
+.designer-img {
+  position: relative;
+}
+
+.designer-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.designers-link {
+  color: #fff;
+}
+
+/*CATALOGUE-SECTION*/
+.main-book {
+  margin: 2em;
+}
+.main-book img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.main-book-content {
+  text-align: center;
+  margin: auto;
+}
+.main-book-content h6 {
+  margin-top: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  line-height: 1.5em;
+}
+.main-book-content a {
+  font-size: 0.9em;
+}
+
+/*VIEW MORE CARDS*/
+.view-more .card-content {
+  margin: 0 2em 2em;
+}
+.view-more h6 {
+  text-align: center;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  font-size: 1em;
+  width: 90%;
+  margin: 0.5em auto;
+}
+.view-more .imgcard {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.view-more .imgcard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3019607843);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.view-more .imgcard:hover::before {
+  opacity: 1;
+}
+
+/*FOOTER*/
+footer {
+  text-align: center;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  text-align: initial;
+  font-size: 0.7rem;
+  font-family: "Times New Roman", "Times Now", "Times";
+  line-height: 1.2em;
+}
+footer .footer-container {
+  margin: 6em 2em;
+}
+footer .linha {
+  display: flex;
+}
+footer .linha div,
+footer .linha address {
+  flex: 1;
+  margin: 0;
+  margin-bottom: 2.5em;
+}
+footer .footer-logo {
+  max-width: 50%;
+}
+footer .footer-logo img {
+  max-width: 9em;
+}
+footer .newsletter-link {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #858585;
+}
+footer .media-icons {
+  display: flex;
+  gap: 1em;
+}
+footer .media-icons a {
+  color: #858585;
+}
+footer .media-icons a:hover {
+  color: color-mix(in srgb, #858585, white 15%);
+}
+footer .media-icons i {
+  font-size: 1.3em;
+}
+
+@media screen and (min-width: 48em) {
+  /*CATALOGUE*/
+  .main-book .book-image {
+    width: 50%;
+  }
+  .main-book .main-book-content {
+    margin: 0;
+    width: 50%;
+  }
+  .main-book .main-book-content h6 {
+    font-size: 1.2em;
+  }
+  /*responsive-viewmore-cards*/
+  .view-more {
+    margin: 0 4em;
+  }
+  .view-more .view-more-cards {
+    display: flex;
+    gap: 1em;
+  }
+  .view-more .card-content {
+    margin: 0;
+  }
+}
+/*main-article*/
+@media screen and (min-width: 58em) {
+  .main-article p {
+    font-size: 2em;
+  }
+  .section-title {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 63em) {
+  header .header-logo {
+    height: 80%;
+  }
+  header .header-nav-button {
+    font-size: 1.4em;
+  }
+}
+.main-book {
+  margin: 4em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.main-book .book-image {
+  flex: 1;
+}
+.main-book .main-book-content {
+  flex: 1;
+}
+.main-book .main-book-content h6 {
+  font-size: 1.5em;
+}/*# sourceMappingURL=estilo.css.map */
