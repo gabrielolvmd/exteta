@@ -363,4 +363,33 @@ footer .media-icons i {
 }
 .main-book .main-book-content h6 {
   font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .carousel-item,
+  .carousel-item.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.carousel-item {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.carousel-item img {
+  max-height: 100%;
+}
+
+.carousel-caption {
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=estilo.css.map */
