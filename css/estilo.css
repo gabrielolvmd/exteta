@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 html {
   overflow-x: hidden;
 }
@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Times New Roman", "Times Now", "Times";
+  font-family: 'Times New Roman', 'Times Now', 'Times';
 }
 
 /*MAIN-SECTION*/
@@ -35,7 +35,7 @@ h6 {
 .discover-more-link,
 .products-link-category,
 .discover-link {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #858585;
   text-align: center;
   letter-spacing: 0.1em;
@@ -45,7 +45,7 @@ h6 {
 .products-link,
 .projects-link,
 .designers-link {
-  font-family: "Times New Roman", "Times Now", "Times";
+  font-family: 'Times New Roman', 'Times Now', 'Times';
   color: #858585;
   text-align: center;
   letter-spacing: 0.1em;
@@ -77,7 +77,7 @@ h6 {
   box-sizing: border-box;
   padding: 1em;
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #858585;
@@ -169,7 +169,7 @@ header {
 /*MAIN-ARTICLE*/
 .main-article {
   background: color-mix(in srgb, #858585, white 80%);
-  font-family: "Times New Roman", "Times Now", "Times";
+  font-family: 'Times New Roman', 'Times Now', 'Times';
   padding: 4em 2em;
 }
 .main-article p {
@@ -247,7 +247,7 @@ header {
   width: 100%;
 }
 .view-more .imgcard::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -268,7 +268,7 @@ footer {
   word-spacing: 0.1em;
   text-align: initial;
   font-size: 0.7rem;
-  font-family: "Times New Roman", "Times Now", "Times";
+  font-family: 'Times New Roman', 'Times Now', 'Times';
   line-height: 1.2em;
 }
 footer .footer-container {
@@ -291,7 +291,7 @@ footer .footer-logo img {
 }
 footer .newsletter-link {
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #858585;
 }
 footer .media-icons {
@@ -363,4 +363,29 @@ footer .media-icons i {
 }
 .main-book .main-book-content h6 {
   font-size: 1.5em;
-}/*# sourceMappingURL=estilo.css.map */
+}
+
+@media (min-width: 768px) {
+  #carouselExampleCaptions .carousel-item,
+  #carouselExampleCaptions .carousel-item.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #carouselExampleCaptions .carousel-item.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  #carouselExampleCaptions .carousel-item {
+    opacity: 0;
+    visibility: hidden;
+  }
+  #carouselExampleCaptions .carousel-item img {
+    max-height: 100%;
+  }
+  #carouselExampleCaptions .carousel-caption {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+} /*# sourceMappingURL=estilo.css.map */
